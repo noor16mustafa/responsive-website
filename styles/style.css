@@ -1,0 +1,516 @@
+/*------font import------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap');
+
+/*----common section----*/
+body {
+    background-color: white;
+    text-decoration: none;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-----banner part start------*/
+.container {
+    width: 1050px;
+    margin-top: 40px;
+
+
+}
+
+.banner {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+/*-------Animation part start--------*/
+.banner:hover {
+    background-image: url(/images/brazil-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(/images/portugal.jpg);
+    }
+
+    20% {
+        background-image: url(/images/argentina.jpg);
+    }
+
+    40% {
+        background-image: url(/images/france.jpg);
+    }
+
+    60% {
+        background-image: url(/images/germany.jpg);
+    }
+
+    100% {
+        background-image: url(/images/brazil-team.jpg);
+    }
+
+}
+
+/*-----------Animation part end-------*/
+
+.banner-detail {
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 100px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banner-img {
+
+    margin-top: 50px;
+
+
+}
+
+.banner-detail h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.banner-detail p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.watch-live-btn {
+    width: 110px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+}
+
+.watch-live-btn a {
+    text-decoration: none;
+    color: white;
+    padding-right: 3px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*-----banner part end----*/
+
+/*----------------------------
+   Middle section start
+------------------------------*/
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.options {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(66, 62, 62);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 22px;
+    margin-right: 15px;
+}
+
+.option {
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    margin-top: 22px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.option a {
+    text-decoration: none;
+
+
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.highlight {
+    background-color: red;
+    color: white;
+}
+
+/* -----video part----*/
+
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+
+.video {
+    Width: 266px;
+    height: 320px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(223, 222, 222);
+}
+
+.video img {
+    width: 100%;
+    height: 50%;
+}
+
+.video-info {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.video-info .btn {
+    padding: 4px 15px;
+    border-radius: 5px;
+    border-color: red;
+
+}
+
+.comment {
+    margin-left: 15px;
+}
+
+.comment span {
+    margin-right: 20px;
+}
+
+.comment .fa-clock,
+.fa-message {
+    color: rgb(95, 95, 172);
+    margin-right: 10px;
+}
+
+.view-all-btn {
+
+    margin: 40px 350px;
+    display: none;
+}
+
+.view-all-btn a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+
+}
+
+/*---------------------------Css  middle part For UPCOMING MATCH website start-------------*/
+.upcoming-match {
+    width: 266px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(223, 222, 222);
+}
+
+.flag {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 25px;
+}
+
+.vs h1 {
+    font-family: 'poppins', 'sans-serif ';
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.flag_img {
+    height: 57px;
+    width: 94px;
+
+}
+
+.match-details {
+    text-align: center;
+    font-family: 'poppins', 'sans-serif ';
+    margin-bottom: 30px;
+}
+
+.match-details p {
+    font-size: 12px;
+}
+
+/*---------------------------Css For UPCOMING MATCH website end-------------*/
+
+
+/*---------------------------Css middle part For All GROUP website START-------------*/
+.Allgroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.groups {
+    width: 280px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(223, 222, 222);
+    display: flex;
+    flex-direction: column;
+}
+
+.country-flag img {
+    width: 250px;
+    height: 175px;
+    margin: 10px 10px;
+}
+
+
+
+.group-no {
+    text-align: center;
+    font-family: 'poppins', 'sans-serif ';
+    margin-bottom: 10px;
+}
+
+/*---------------------------Css For ALL GROUP website end-------------*/
+
+
+/*--------------Footer Part-------------*/
+footer {
+    background-color: black;
+    width: 1240px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.goal {
+    width: 1000px;
+    margin: 50px 100px;
+    padding-top: 40px;
+
+}
+
+.goal h1 {
+    text-align: center;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+hr {
+    border-top: 0.5px thin rgb(150, 135, 135);
+
+}
+
+.goal-info {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: 40px 100px;
+}
+
+.goal-info a {
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 20px;
+
+}
+
+.social-media-link {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: 0 440px;
+}
+
+.social-media-link a {
+    padding-right: 30px;
+}
+
+.fa-facebook,
+.fa-linkedin {
+    color: rgb(25, 144, 190);
+}
+
+.fa-instagram {
+    color: rgb(231, 68, 90);
+}
+
+/*------------------------------------mobile device--------
+---------------------------------------Resposiveness------*/
+
+@media only screen and (max-width:688px) {
+
+    .container,
+    .banner-detail {
+        width: 100%;
+    }
+
+
+    /*-----------banner part ------*/
+    .banner {
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    /*--------Middle part-----*/
+    .middle-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options {
+
+        background-color: white;
+
+    }
+
+    .option {
+        border: 1px solid gray;
+    }
+
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    /*--------Footer part--------*/
+    footer {
+        width: 100%;
+    }
+
+    .goal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .goal-title,
+    .goal-info,
+    .social-media-link {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+/*---------------------------------Tablet device---------
+-----------------------------------Responsiveness-----*/
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    /*-----MIddle part-----*/
+    .middle-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .options {
+
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    .option {
+        border: 1px solid gray;
+        padding-top: 22px;
+        text-align: center;
+    }
+
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .view-all-btn {
+        display: block;
+    }
+
+    /*--------Footer part-----*/
+    footer {
+        width: 100%;
+    }
+
+    .goal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    .goal-info {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media-link {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+
+}
