@@ -38,15 +38,16 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     transition: 5s;
-    animation-name: animate;
+    /*  animation-name: animate;
     animation-direction: alternate-reverse;
     animation-duration: 15s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;*/
 }
 
+/*
 @keyframes animate {
     0% {
         background-image: url(/images/portugal.jpg);
@@ -68,7 +69,7 @@ main {
         background-image: url(/images/brazil-team.jpg);
     }
 
-}
+}*/
 
 /*-----------Animation part end-------*/
 
